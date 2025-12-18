@@ -1,0 +1,34 @@
+import turtle
+
+screen = turtle.Screen()
+screen.setup(width=400, height=300)
+screen.title("fiocco di neve")
+
+turtle_start= turtle.Turtle()
+turtle_start.speed(1)
+
+screen.colormode(255)
+
+R= 255
+G = 182
+B = 193
+screen.bgcolor((R, G, B))
+
+turtle_start.turtlesize(10)
+
+
+turtle_start.begin_fill()
+turtle_start.color("black")
+for i in range(4):
+ turtle_start.forward(100)
+ turtle_start.right(90)
+
+
+turtle_start.penup
+turtle_start.goto(400)
+
+for i in range(6):
+
+ turtle_start.pendown
+ turtle_start.forward(100)
+ turtle_start.right(60)
