@@ -1,0 +1,16 @@
+import turtle
+merrino = turtle.Turtle()
+merrino.color("blue")
+merrino.speed(10)
+screen=turtle.Screen()
+screen.setup(width=400, height=300)
+screen.title("pentagono")
+
+for i in range (100):
+    merrino.forward(200)
+    merrino.right(72)
+    merrino.left(8)
+merrino.fillcolor("blue")
+merrino.begin_fill
+merrino.end_fill
+
