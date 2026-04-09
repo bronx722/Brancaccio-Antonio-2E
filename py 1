@@ -1,0 +1,14 @@
+# Imports go at the top
+from microbit import *
+lightsOn= False
+
+while True:
+    if microphone.was_event(SoundEvent.LOUD):
+        lightsOn = True
+        if lightsOn:
+           display.show(Image.DIAMOND)
+           if microphone.was_event(SoundEvent.QUIET):
+               lightsOn= False
+               display.clear()
+        else:
+          display.clear()
